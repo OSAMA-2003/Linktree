@@ -219,7 +219,7 @@ function LinkCard({ link, index }: { link: typeof links[0]; index: number }) {
 
 export default function Home() {
   return (
-    <main
+    <motion.main
       className="relative min-h-screen overflow-hidden bg-gradient-to-br from-blue-900 via-black to-purple-900"
       initial="hidden"
       animate="visible"
@@ -330,6 +330,6 @@ export default function Home() {
           &copy; {new Date().getFullYear()} Osama Ahmed 
         </p>
       </motion.div>
-    </main>
+    </motion.main>
   );
 }
